@@ -18,4 +18,14 @@ $(document).ready(function() {
     $("#image-hidden").toggle();
     $("img").toggle();
   });
+
+  $("#fade-shown").click(function() {
+    $("#fade-shown").fadeOut();
+    $("#fade-hidden").fadeIn();
+  });
+
+  $("#fade-hidden").click(function() {
+    $("#fade-shown").fadeIn();
+    $("#fade-hidden").fadeOut();
+  });
 });
