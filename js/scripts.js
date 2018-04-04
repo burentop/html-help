@@ -3,11 +3,19 @@ $(document).ready(function() {
     alert("This is a header.");
   });
 
-  $("p").click(function() {
-    alert("This is a paragraph.");
-  });
-
   $("img").click(function() {
     alert("This is an image.");
+  });
+
+  $("#image-shown").click(function() {
+    $("#image-shown").toggle();
+    $("#image-hidden").toggle();
+    $("img").toggle();
+  });
+
+  $("#image-hidden").click(function() {
+    $("#image-shown").toggle();
+    $("#image-hidden").toggle();
+    $("img").toggle();
   });
 });
